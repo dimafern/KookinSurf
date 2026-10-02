@@ -18,17 +18,20 @@
 <body>
 
 <h1>KookinSurf — Privacy Policy</h1>
-<p class="updated">Last updated: 11 September 2026</p>
+<p class="updated">Last updated: 2 October 2026</p>
 
 <p><strong>KookinSurf does not collect your data.</strong> There is no KookinSurf server, no
 account to create, no analytics, no advertising, and no third-party tracking code in the app.
 Everything the app records stays on your device, in your own Apple Health store, or in your own
-private iCloud — places the developer cannot read.</p>
+private iCloud — places the developer cannot read. The one thing the app asks the internet for is
+the surf forecast, described under <a href="#forecast">Forecast</a> below.</p>
 
 <h2>Health and fitness data</h2>
 <p>KookinSurf reads surf sessions, heart rate, workout duration and calories from Apple Health in
 order to show you your own history, and writes sessions back to Apple Health when your Apple Watch
-records one or when you import a track file.</p>
+records one or when you import a track file. On an Apple Watch with a depth sensor (Apple Watch
+Ultra, Series 10 or later) the Watch app also reads the water temperature during a session, which
+needs Motion &amp; Fitness access, and saves one figure for the session with the workout.</p>
 <ul>
   <li>This data is read and written on your device through Apple's HealthKit framework.</li>
   <li>It is never transmitted to the developer or to any third party.</li>
@@ -38,12 +41,30 @@ records one or when you import a track file.</p>
 
 <h2>Location</h2>
 <p>While a session is recording, your Apple Watch collects location fixes to draw your route,
-count your waves, name the surf spot and choose the nearest tide station.</p>
+count your waves, name the surf spot and work out the tide there.</p>
 <ul>
-  <li>Location is processed entirely on your device. Surf spot names and tide predictions are
-      computed from datasets bundled inside the app, so no location lookup is ever sent over the
-      network.</li>
+  <li>Your route is processed on your device and is never sent anywhere. Surf spot names and
+      tide predictions are computed from datasets bundled inside the app, with no network
+      lookup.</li>
   <li>Your route is stored with the session in Apple Health, under your control.</li>
+  <li>The iPhone app may use your location to centre the map and to pick the spot its widget
+      shows. That, too, stays on the device, except as described under Forecast.</li>
+</ul>
+
+<h2 id="forecast">Forecast</h2>
+<p>The swell, wind and temperature forecast comes from
+<a href="https://open-meteo.com/">Open-Meteo</a>, a public weather service. To fetch it, the app
+sends Open-Meteo the coordinates of the place the forecast is for: the part of the map you are
+looking at, the spot your widget shows, and the spots in your list.</p>
+<ul>
+  <li>Only coordinates are sent. No name, account, identifier, session, route or health data
+      goes with them, and the developer never receives the request or the answer.</li>
+  <li>As with any website, Open-Meteo's servers see the IP address the request comes from. How
+      Open-Meteo handles requests is described in its own
+      <a href="https://open-meteo.com/en/terms">terms and privacy policy</a>.</li>
+  <li>Requests are made when you open the Spots tab or the forecast, and by the medium tide
+      widget when it refreshes. Tides, sunrise and sunset are worked out on your device and
+      involve no request at all.</li>
 </ul>
 
 <h2>iCloud</h2>
@@ -54,7 +75,7 @@ access, read or export it. Apple's handling of that data is covered by
 <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</p>
 
 <h2>Files you import or export</h2>
-<p>Track files you import (GPX or KookinSurf JSON) are read on your device. Files you export are
+<p>Track files you import (GPX, Garmin FIT or KookinSurf JSON) are read on your device. Files you export are
 written wherever you choose to save or send them. Neither passes through the developer.</p>
 
 <h2>Deleting your data</h2>
