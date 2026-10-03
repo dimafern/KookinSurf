@@ -18,13 +18,15 @@
 <body>
 
 <h1>KookinSurf — Privacy Policy</h1>
-<p class="updated">Last updated: 2 October 2026</p>
+<p class="updated">Last updated: 3 October 2026</p>
 
 <p><strong>KookinSurf does not collect your data.</strong> There is no KookinSurf server, no
 account to create, no analytics, no advertising, and no third-party tracking code in the app.
 Everything the app records stays on your device, in your own Apple Health store, or in your own
-private iCloud — places the developer cannot read. The one thing the app asks the internet for is
-the surf forecast, described under <a href="#forecast">Forecast</a> below.</p>
+private iCloud — places the developer cannot read. The app asks the internet for three things,
+each described below: the surf <a href="#forecast">forecast</a>, Apple Maps where you
+<a href="#apple-maps">choose a spot on the map</a>, and the
+<a href="#trip-photographs">photographs</a> that head your trips.</p>
 
 <h2>Health and fitness data</h2>
 <p>KookinSurf reads surf sessions, heart rate, workout duration and calories from Apple Health in
@@ -48,7 +50,8 @@ count your waves, name the surf spot and work out the tide there.</p>
       lookup.</li>
   <li>Your route is stored with the session in Apple Health, under your control.</li>
   <li>The iPhone app may use your location to centre the map and to pick the spot its widget
-      shows. That, too, stays on the device, except as described under Forecast.</li>
+      shows. That, too, stays on the device, except as described under Forecast and under
+      Choosing a spot on the map: the area of map around you is what those requests carry.</li>
 </ul>
 
 <h2 id="forecast">Forecast</h2>
@@ -65,6 +68,35 @@ looking at, the spot your widget shows, and the spots in your list.</p>
   <li>Requests are made when you open the Spots tab or the forecast, and by the medium tide
       widget when it refreshes. Tides, sunrise and sunset are worked out on your device and
       involve no request at all.</li>
+</ul>
+
+<h2 id="apple-maps">Choosing a spot on the map</h2>
+<p>The maps in the app are Apple Maps. Where you choose a spot on the map, the app also asks Apple
+Maps which surf breaks it knows in the area on screen, and looks up whatever you type into the
+search field there.</p>
+<ul>
+  <li>The request carries the area of map on screen and, for a search, the words you typed. No
+      session, route, health data or account goes with it, and the developer never receives the
+      request or the answer.</li>
+  <li>How Apple handles Maps requests is described in
+      <a href="https://www.apple.com/legal/privacy/data/en/apple-maps/">Apple Maps &amp; Privacy</a>.</li>
+</ul>
+
+<h2 id="trip-photographs">Trip photographs</h2>
+<p>When your sessions are grouped by trip, each trip is headed by a photograph of the place: a
+<a href="https://www.wikivoyage.org/">Wikivoyage</a> banner kept on
+<a href="https://commons.wikimedia.org/">Wikimedia Commons</a>. The app downloads the picture from
+Wikimedia the first time a trip is shown, and keeps it on your device.</p>
+<ul>
+  <li>The request names only the picture: one per island, region or country. No coordinates,
+      dates, sessions, account or identifier go with it, and the developer never receives the
+      request or the answer.</li>
+  <li>As with any website, Wikimedia's servers see the IP address the request comes from, and so
+      can tell that someone at that address asked for the picture of that region. How Wikimedia
+      handles requests is described in its
+      <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy">privacy policy</a>.</li>
+  <li>Nothing is requested while sessions are grouped by month, or for a trip whose picture is
+      already on your device.</li>
 </ul>
 
 <h2>iCloud</h2>
